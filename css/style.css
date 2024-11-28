@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color:#151C0D;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Gabarito", serif;
+}
+
+p, a, div {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #A86A24;
+    color: #fff;
+}
+
+.nav-items{
+    min-width: 25%;
+    max-width: 30%;
+    height: auto;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #FEFAE0;
+}
+
+.navbar .brand {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hamburger {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: #FEFAE0;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1001;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #A86A24;
+    text-decoration: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+}
+
+
+.sidebar ul li a:hover,
+.sidebar ul li a:focus {
+    text-decoration: underline;
+}
+
+.nav-items a:hover,
+.nav-items a:focus{
+    text-decoration: underline;
+}
+
+
+.home-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.about img{
+    align-self: center;
+    width:20vh;
+    height: auto;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    padding: 10px;
+    height: 100%;
+    align-self: center;
+}
+
+.courses h4>span {
+    text-decoration: underline;
+}
+
+h4 {
+    margin-top: 0;
+}
+.academics{
+    margin-bottom: 0.5em;
+}
+.smaller {
+    font-size: medium;
+}
+
+.scroll-area {
+    width: 100%;
+    max-width: 90%; 
+    height: 300px; 
+    border: 1px solid #A86A24; 
+    border-radius: 8px; 
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    padding: 10px; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    align-self: center;
+  }
+  
+  .scroll-content{
+    font-size: medium;
+  }
+  .course {
+    font-size:medium;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .course:hover,
+  .course:focus {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  }
+  .links{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+.footer {
+    background-color: #A86A24;
+    color: #FEFAE0;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer p {
+    font-weight: 600;
+    align-self: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    min-width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #A86A24;
+    padding-bottom: 5px;
+  }
+  
+  .exp {
+    margin-bottom: 20px;
+  }
+  
+  .exp h3 {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #222;
+  }
+  
+  .exp .company {
+    font-size: 14px;
+    color: #555;
+    margin: 2px 0;
+    font-style: italic;
+  }
+  
+  .exp .description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  @media screen and (min-width: 1024px){
+    .nav-items {
+        display: flex;
+    }
+    .hamburger {
+        visibility: hidden;
+    }
+    .home-grid{
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: none;
+    }
+    .courses{
+        padding: 0px;
+    }
+    .container {
+        max-width: 800px;
+        padding: 30px;
+      }
+    
+    .container h2 {
+        font-size: 20px;
+    }
+    
+    .exp h3 {
+        font-size: 18px;
+    }
+    
+    .exp .description {
+        font-size: 16px;
+    }
+}
+
+.form-center {
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    min-height: 80vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.form-container {
+    max-width: 400px;
+    min-width: 30%;
+    width:25vh;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-field {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #588B8B;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  button:focus,
+  button:hover {
+    background-color: #94D7D7;
+    color: #276060;
+  }
+  
+  .feedback {
+    margin-top: 10px;
+    font-size: 14px;
+    color: green;
+  }
+
+  .linkedin-logo {
+    width: 30px; 
+    height: auto; 
+    display: inline-block;
+    cursor: pointer;
+  }

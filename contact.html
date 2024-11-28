@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <nav class="navbar">
+        <h2>MyWebsite</h2>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+                <a href="exp.html">About</a>
+                <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exp.html">Expeirence</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="form-center">
+        <h2>Contact me</h2>
+        <p>I'll reach back out to you as soon as possible, thanks :)</p>
+        <div class="form-container">
+            <form id="contact-form">
+            <div class="formfield">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required />
+            </div>
+        
+            <div class="formfield">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            </div>
+        
+            <div class="formfield">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+            </div>
+        
+            <button type="submit">Submit</button>
+            </form>
+            <p id="form-feedback" class="feedback"></p>
+        </div>
+    </div>
+               
+    <script src="script.js"></script>
+<footer class="footer">
+    <p>© AS COMP 126</p>
+  </footer>
+</html>
