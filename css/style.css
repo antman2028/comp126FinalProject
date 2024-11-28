@@ -282,6 +282,11 @@ h4 {
     padding-bottom: 10px;
 }
 
+.form-center>p,
+.form-center>h2 {
+    text-align: center;
+}
+
 
 .form-container {
     max-width: 400px;
