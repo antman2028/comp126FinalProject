@@ -1,76 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tonifolio</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/BrownT.jpeg" type="image/x-icon" />
+  </head>
+  <body>
     <div class="overlay" id="overlay"></div>
     <nav class="navbar">
-        <a href="index.html"><img alt="ToniLogo" class="logo" src="images/BrownT.jpeg"></a>
-        <div class="hamburger" id="hamburger">&#9776;</div>
-        <div class="nav-items">
-            <a href="index.html">Home</a>
-                <a href="exp.html">Experience</a>
-                <a href="contact.html">Contact</a>
-        </div>
+      <div class="logoTitle">
+        <a href="index.html"
+          ><img alt="ToniLogo" class="logo" src="images/BrownT.jpeg"
+        /></a>
+        <h2>Toni's Portfolio</h2>
+      </div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <div class="nav-items">
+        <a href="index.html">Home</a>
+        <a href="exp.html">Experience</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
     <div class="sidebar" id="sidebar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="exp.html">Experience</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="exp.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
     <div class="home-grid">
-        <div class="about">
-            <h1>Hi,<br>I'm Toni!</h1>
-            <img src="images/pfp.jpg" alt="ProfilePic">
-            <p>Hi, I’m Toni. I’m a computer science student at UNC Chapel Hill with experience interning at Microsoft Azure and Amazon Web Services. I enjoy working on projects that solve real-world problems, especially ones that challenge me to think critically and grow as an engineer. When I’m not at my desk, I’m probably on a hiking trail or scaling a rock wall. I also have a soft spot for a good hotpot meal. I always try and find new things to learn and work with others on. Please contact me if you'd like to collaborate!</p>
-            <button type="submit" onclick="location.href='contact.html'">Contact me</button>
+      <div class="about">
+        <h1>Hi,<br />I'm Toni!</h1>
+        <img src="images/pfp.jpg" alt="ProfilePic" />
+        <p>
+          Hi, I’m Toni. I’m a computer science student at UNC Chapel Hill with
+          experience interning at Microsoft Azure and Amazon Web Services. I
+          enjoy working on projects that solve real-world problems, especially
+          ones that challenge me to think critically and grow as an engineer.
+          When I’m not at my desk, I’m probably on a hiking trail or scaling a
+          rock wall. I also have a soft spot for a good hotpot meal. I always
+          try and find new things to learn and work with others on. Please
+          contact me if you'd like to collaborate!
+        </p>
+        <button type="submit" onclick="location.href='contact.html'">
+          Contact me
+        </button>
+      </div>
+      <div class="courses">
+        <h3 class="academics">
+          Academics
+          <hr />
+        </h3>
+        <h4>
+          University of North Carolina at Chapel Hill 🐏<br />Major: Computer
+          Science & Statistics<br />GPA: <span>3.8</span>
+        </h4>
+        <h4>Relevant Coursework</h4>
+        <div class="scroll-area">
+          <div class="scroll-content">
+            <div class="course">
+              <p>Modern Web Programming</p>
+              <p>
+                Mastered building dynamic, interactive websites and web
+                applications using modern frameworks, client-server
+                architecture, and APIs
+              </p>
+            </div>
+            <hr />
+            <div class="course">
+              <p>Computer Architecture</p>
+              <p>
+                Explored the design, organization, and functionality of computer
+                systems, including processors, and memory
+              </p>
+            </div>
+            <hr />
+            <div class="course">
+              <p>Operating Systems</p>
+              <p>
+                Learned how operating systems manage hardware resources, provide
+                services like multitasking, and handle concurrency and system
+                security
+              </p>
+            </div>
+            <hr />
+            <div class="course">
+              <p>Distributed Systems</p>
+              <p>
+                Examined systems where components located on networked computers
+                communicate and coordinate to appear as a unified system
+              </p>
+            </div>
+            <hr />
+          </div>
         </div>
-        <div class="courses">
-            <h3 class="academics">Academics<hr></h3>
-            <h4>University of North Carolina at Chapel Hill 🐏<br>Major: Computer Science & Statistics<br>GPA: <span>3.8</span></h4>
-            <h4>Relevant Coursework</h4>
-            <div class="scroll-area">
-                <div class="scroll-content">
-                    <div class="course">
-                        <p>Modern Web Programming</p>
-                        <p>Mastered building dynamic, interactive websites and web applications using modern frameworks, client-server architecture, and APIs</p>
-                    </div>
-                    <hr>
-                    <div class="course">
-                        <p>Computer Architecture</p>
-                        <p>Explored the design, organization, and functionality of computer systems, including processors, and memory</p>
-                    </div>
-                    <hr>
-                    <div class="course">
-                        <p>Operating Systems</p>
-                        <p>Learned how operating systems manage hardware resources, provide services like multitasking, and handle concurrency and system security</p>
-                    </div>
-                    <hr>
-                    <div class="course">
-                        <p>Distributed Systems</p>
-                        <p>Examined systems where components located on networked computers communicate and coordinate to appear as a unified system</p>
-                    </div>
-                    <hr>
-                </div>
-              </div>
-            
-        </div>
+      </div>
     </div>
     <div class="links">
-        <h2>Connect with me</h2>
-        <a href="https://www.linkedin.com/in/antonio-salinas-1708a724b/">
-            <img class="linkedin-logo" src="images/LinkedIn_logo_initials.png" alt="LinkedinLogo">
-        </a>
+      <h2>Connect with me</h2>
+      <a href="https://www.linkedin.com/in/antonio-salinas-1708a724b/">
+        <img
+          class="linkedin-logo"
+          src="images/LinkedIn_logo_initials.png"
+          alt="LinkedinLogo"
+        />
+      </a>
     </div>
     <script src="script.js"></script>
-</body>
-<footer class="footer">
+  </body>
+  <footer class="footer">
     <p>© AS COMP 126</p>
   </footer>
 </html>
