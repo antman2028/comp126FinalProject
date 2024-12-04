@@ -399,6 +399,7 @@ button:hover {
   max-width: 500px;
   position: relative;
   animation: glow 1.5s infinite alternate;
+  box-sizing: border-box;
 }
 
 @keyframes glow {
